@@ -1,0 +1,130 @@
+/*css reset*/
+body,
+header {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+img {
+    display: block;
+    position: relative;
+    max-width: 100%;
+}
+
+body {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/*Form inputs styles*/
+input[type=text],
+input[type=email] {
+    width: 100%;
+    display: block;
+    padding: 12px 20px;
+    margin: 5px 0;
+    border: 1px solid rgba(33, 39, 38, 0.5);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/*Button styles*/
+#mealPlanForm {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1.2em;
+    font-family: Arial, sans-serif;
+}
+
+#printPlanner,
+#downloadPlanner,
+#reset {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 20px 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid rgba(33, 39, 38, 0.5);
+    cursor: pointer;
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.9em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#printPlanner:hover,
+#downloadPlanner:hover,
+#reset:hover {
+    background-color: white;
+    border-color: #333;
+    color: #333;
+}
+
+#generatePlan {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 20px 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid rgba(33, 39, 38, 0.5);
+    display: inline-block;
+    cursor: pointer;
+    background-color: #f2c32a;
+    color: #333;
+    text-align: center;
+    font-size: 0.9em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#generatePlan:hover {
+    color: white;
+    background-color: #333;
+}
+
+/*Styles for a new window*/
+#newWindowBody {
+    margin: 20px 20px;
+}
+
+#newWindowBody h2 {
+    color: #3a3a3a;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.day {
+    margin-bottom: 20px;
+    line-height: 1.8em;
+}
+
+.day:nth-of-type(odd) {
+    background-color: #f2f3f7;
+}
+
+.day:nth-of-type(even) {
+    background-color: #fff5b1f6;
+}
+
+.meal {
+    margin-left: 20px;
+}
+
+span {
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1635px),
+print {
+    #mealPlanForm {
+        width: 80%;
+    }
+}
